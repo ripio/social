@@ -15,11 +15,11 @@ class LensterDocument extends Document {
           <link rel="dns-prefetch" href="https://static-assets.lenster.xyz" />
 
           {/* Misc */}
-          <meta name="application-name" content="Lenster" />
+          <meta name="application-name" content="Ripio Social" />
           <meta name="mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-          <meta name="apple-mobile-web-app-title" content="Lenster" />
+          <meta name="apple-mobile-web-app-title" content="Ripio Social" />
 
           {/* Icons */}
           <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />

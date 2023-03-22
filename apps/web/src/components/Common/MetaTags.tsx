@@ -17,7 +17,7 @@ const MetaTags: FC<MetaTagsProps> = ({ title = APP_NAME, description = DESCRIPTI
         content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover"
       />
 
-      <meta property="og:url" content="https://lenster.xyz" />
+      <meta property="og:url" content="https://social.ripio.com" />
       <meta property="og:site_name" content={APP_NAME} />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
@@ -32,7 +32,7 @@ const MetaTags: FC<MetaTagsProps> = ({ title = APP_NAME, description = DESCRIPTI
       <meta property="twitter:image:src" content={DEFAULT_OG} />
       <meta property="twitter:image:width" content="400" />
       <meta property="twitter:image:height" content="400" />
-      <meta property="twitter:creator" content="lensterxyz" />
+      <meta property="twitter:creator" content="ripio-social" />
 
       <link
         rel="search"

@@ -454,7 +454,7 @@ const NewPublication: FC<NewPublicationProps> = ({ publication }) => {
         version: '2.0.0',
         metadata_id: uuid(),
         content: publicationContent,
-        external_url: `https://lenster.xyz/u/${currentProfile?.handle}`,
+        external_url: `https://social.ripio.com/u/${currentProfile?.handle}`,
         image: attachmentsInput.length > 0 ? getAttachmentImage() : textNftImageUrl,
         imageMimeType:
           attachmentsInput.length > 0
