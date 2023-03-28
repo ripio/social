@@ -2,7 +2,6 @@ import MessageIcon from '@components/Messages/MessageIcon';
 import NotificationIcon from '@components/Notification/NotificationIcon';
 import useStaffMode from '@components/utils/hooks/useStaffMode';
 import { Disclosure } from '@headlessui/react';
-import { SearchIcon, XIcon } from '@heroicons/react/outline';
 import { t } from '@lingui/macro';
 import clsx from 'clsx';
 import type { Profile } from 'lens';
