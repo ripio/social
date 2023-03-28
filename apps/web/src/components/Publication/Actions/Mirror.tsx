@@ -163,7 +163,7 @@ const Mirror: FC<MirrorProps> = ({ publication, showCount }) => {
   const iconClassName = showCount ? 'w-[17px] sm:w-[20px]' : 'w-[15px] sm:w-[18px]';
 
   return (
-    <div className={clsx(mirrored ? 'text-green-500' : 'text-brand', 'flex items-center space-x-1')}>
+    <div className={clsx(mirrored ? 'text-green-500' : 'text-black', 'flex items-center space-x-1')}>
       <motion.button
         whileTap={{ scale: 0.9 }}
         onClick={createMirror}

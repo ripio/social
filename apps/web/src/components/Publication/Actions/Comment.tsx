@@ -21,7 +21,7 @@ const Comment: FC<CommentProps> = ({ publication, showCount }) => {
   const iconClassName = showCount ? 'w-[17px] sm:w-[20px]' : 'w-[15px] sm:w-[18px]';
 
   return (
-    <div className="flex items-center space-x-1 text-blue-500">
+    <div className="flex items-center space-x-1 text-black">
       <motion.button whileTap={{ scale: 0.9 }} aria-label="Comment">
         <Link href={`/posts/${publication.id}`}>
           <div className="rounded-full p-1.5 hover:bg-blue-300 hover:bg-opacity-20">

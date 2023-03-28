@@ -128,7 +128,7 @@ const Like: FC<LikeProps> = ({ publication, showCount }) => {
   const isGM = hasGm(content);
 
   return (
-    <div className={clsx(isGM ? 'text-yellow-600' : 'text-pink-500', 'flex items-center space-x-1')}>
+    <div className={clsx(isGM ? 'text-yellow-600' : 'text-black', 'flex items-center space-x-1')}>
       <motion.button
         whileTap={{ scale: 0.9 }}
         animate={{
