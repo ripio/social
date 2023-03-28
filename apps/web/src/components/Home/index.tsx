@@ -30,7 +30,7 @@ const Home: NextPage = () => {
   return (
     <>
       <MetaTags />
-      {!currentProfile && <Hero />}
+      {!currentProfile}
       <GridLayout>
         <GridItemEight className="space-y-5">
           {currentProfile ? (
