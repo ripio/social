@@ -54,7 +54,7 @@ const Collect: FC<CollectProps> = ({ publication, electedMirror, showCount }) =>
 
   return (
     <>
-      <div className="flex items-center space-x-1 text-red-500">
+      <div className="flex items-center space-x-1 text-black">
         <motion.button
           whileTap={{ scale: 0.9 }}
           onClick={() => {

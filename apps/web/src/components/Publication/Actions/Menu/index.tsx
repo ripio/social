@@ -6,19 +6,15 @@ import clsx from 'clsx';
 import type { Publication } from 'lens';
 import type { FC } from 'react';
 import { Fragment } from 'react';
-import { useAppStore } from 'src/store/app';
 
-import Delete from './Delete';
 import Embed from './Embed';
 import Permalink from './Permalink';
-import Report from './Report';
 
 interface PublicationMenuProps {
   publication: Publication;
 }
 
 const PublicationMenu: FC<PublicationMenuProps> = ({ publication }) => {
-  const currentProfile = useAppStore((state) => state.currentProfile);
   const iconClassName = 'w-[15px] sm:w-[18px]';
 
   return (
@@ -39,11 +35,6 @@ const PublicationMenu: FC<PublicationMenuProps> = ({ publication }) => {
           className="absolute right-0 z-[5] mt-1 w-max rounded-xl border bg-white shadow-sm focus:outline-none dark:border-gray-700 dark:bg-gray-900"
           data-testid={`publication-${publication.id}-menu-items`}
         >
-          {currentProfile?.id === publication?.profile?.id ? (
-            <Delete publication={publication} />
-          ) : (
-            <Report publication={publication} />
-          )}
           <Embed publication={publication} />
           <Permalink publication={publication} />
         </Menu.Items>

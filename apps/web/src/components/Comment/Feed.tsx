@@ -71,7 +71,7 @@ const Feed: FC<FeedProps> = ({ publication }) => {
       {loading && <PublicationsShimmer />}
       {!loading && totalComments === 0 && (
         <EmptyState
-          message={t`Be the first one to comment!`}
+          message={t`No one commented this post yet.`}
           icon={<CollectionIcon className="text-brand h-8 w-8" />}
         />
       )}

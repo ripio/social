@@ -4,7 +4,6 @@ import type { Publication } from 'lens';
 import type { FC } from 'react';
 import getAppName from 'utils/getAppName';
 
-import PublicationActions from './Actions';
 import HiddenPublication from './HiddenPublication';
 import PublicationBody from './PublicationBody';
 import PublicationHeader from './PublicationHeader';
@@ -54,8 +53,6 @@ const FullPublication: FC<FullPublicationProps> = ({ publication }) => {
                   <PublicationStats publication={publication} />
                 </>
               )}
-              <div className="divider" />
-              <PublicationActions publication={publication} showCount />
             </>
           )}
         </div>

@@ -18,7 +18,7 @@ const Footer: FC = () => {
           <Trans>GitHub</Trans>
         </a>
       </div>
-      <div className="mt-2 flex space-x-4">
+      <div className="mt-2 flex space-x-4 px-3 lg:px-0">
         <Locale />
         <a
           className="hover:font-bold"
