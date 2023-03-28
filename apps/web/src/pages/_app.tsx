@@ -7,20 +7,20 @@ import { lazy, Suspense } from 'react';
 
 const Providers = lazy(() => import('@components/Common/Providers'));
 
-const circluarStd = localFont({
+const lato2 = localFont({
   src: [
     {
-      path: '../../public/fonts/CircularXXSub-Book.woff',
+      path: '../../public/fonts/Lato-Regular.woff',
       weight: '400',
       style: 'normal'
     },
     {
-      path: '../../public/fonts/CircularXXSub-Medium.woff',
+      path: '../../public/fonts/Lato-Medium.woff',
       weight: '500',
       style: 'medium'
     },
     {
-      path: '../../public/fonts/CircularXXSub-Bold.woff',
+      path: '../../public/fonts/Lato-Bold.woff',
       weight: '700',
       style: 'bold'
     }
@@ -37,7 +37,7 @@ const App = ({ Component, pageProps }: AppProps) => {
       <Providers>
         <style jsx global>{`
           body {
-            font-family: ${circluarStd.style.fontFamily};
+            font-family: ${lato2.style.fontFamily};
           }
         `}</style>
         <Component {...pageProps} />

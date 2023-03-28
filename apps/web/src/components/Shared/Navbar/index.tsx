@@ -2,7 +2,6 @@ import MessageIcon from '@components/Messages/MessageIcon';
 import NotificationIcon from '@components/Notification/NotificationIcon';
 import useStaffMode from '@components/utils/hooks/useStaffMode';
 import { Disclosure } from '@headlessui/react';
-import { SearchIcon, XIcon } from '@heroicons/react/outline';
 import { t } from '@lingui/macro';
 import clsx from 'clsx';
 import type { Profile } from 'lens';
@@ -13,8 +12,6 @@ import { useAppStore } from 'src/store/app';
 import formatHandle from 'utils/formatHandle';
 import hasPrideLogo from 'utils/hasPrideLogo';
 
-import MenuItems from './MenuItems';
-import MoreNavItems from './MoreNavItems';
 import Search from './Search';
 import StaffBar from './StaffBar';
 
@@ -63,7 +60,6 @@ const Navbar: FC = () => {
       <>
         <NavItem url="/" name={t`Home`} current={pathname == '/'} />
         <NavItem url="/explore" name={t`Explore`} current={pathname == '/explore'} />
-        <MoreNavItems />
       </>
     );
   };
@@ -79,9 +75,6 @@ const Navbar: FC = () => {
           <div className="container mx-auto max-w-screen-xl px-5">
             <div className="relative flex h-14 items-center justify-between sm:h-16">
               <div className="flex items-center justify-start">
-                <Disclosure.Button className="inline-flex items-center justify-center rounded-md text-gray-500 focus:outline-none md:hidden">
-                  {open ? <XIcon className="h-6 w-6" /> : <SearchIcon className="h-6 w-6" />}
-                </Disclosure.Button>
                 <Link href="/" className="hidden md:block">
                   <img
                     className="h-8 w-8"
@@ -91,16 +84,8 @@ const Navbar: FC = () => {
                     alt="Logo"
                   />
                 </Link>
-                <div className="hidden sm:ml-6 md:block">
-                  <div className="flex items-center space-x-4">
-                    <div className="hidden md:block">
-                      <Search onProfileSelected={onProfileSelected} />
-                    </div>
-                    <NavItems />
-                  </div>
-                </div>
               </div>
-              <Link href="/" className={clsx('md:hidden', !currentProfile?.id && 'ml-[60px]')}>
+              <Link href="/" className={clsx('md:hidden', !currentProfile?.id)}>
                 <img
                   className="h-7 w-7"
                   height={32}
@@ -116,7 +101,6 @@ const Navbar: FC = () => {
                     <NotificationIcon />
                   </>
                 ) : null}
-                <MenuItems />
               </div>
             </div>
           </div>

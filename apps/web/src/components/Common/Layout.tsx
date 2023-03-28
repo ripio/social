@@ -1,5 +1,4 @@
 import GlobalAlerts from '@components/Shared/GlobalAlerts';
-import BottomNavigation from '@components/Shared/Navbar/BottomNavigation';
 import getIsAuthTokensAvailable from '@lib/getIsAuthTokensAvailable';
 import getToastOptions from '@lib/getToastOptions';
 import resetAuthData from '@lib/resetAuthData';
@@ -141,7 +140,6 @@ const Layout: FC<LayoutProps> = ({ children }) => {
       <GlobalAlerts />
       <div className="flex min-h-screen flex-col pb-14 md:pb-0">
         <Navbar />
-        <BottomNavigation />
         {children}
       </div>
     </>
