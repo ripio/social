@@ -12,7 +12,6 @@ import { PAGEVIEW } from 'src/tracking';
 import EnableDispatcher from './EnableDispatcher';
 import EnableMessages from './EnableMessages';
 import FeedType from './FeedType';
-import Hero from './Hero';
 import Highlights from './Highlights';
 import RecommendedProfiles from './RecommendedProfiles';
 import SetDefaultProfile from './SetDefaultProfile';
